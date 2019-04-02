@@ -1,0 +1,9 @@
+name: "albertos-website"
+output_dir: "."
+navbar:
+  title: "Alberto López Ortega"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
