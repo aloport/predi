@@ -6,7 +6,8 @@ El mercado de predicción sobre las elecciones del 28A, así como los pasados me
 
 _________________
 
-
 ```{r pressure, echo=FALSE, out.width = '20%'}
 knitr::include_graphics("uzh.png")
 ```
+
+Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)

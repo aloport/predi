@@ -16,3 +16,10 @@ Puedes registrarte en el mercado de predicción creando una cuenta en http://the
 
 Para poder comprar y vender en el mercado de predicción te entregaremos 10 euros. Con este dinero deberás comprar y vender acciones sobre eventos políticos. Tu ganancia al final del juego dependerá de tu buen rendimiento. Por ejemplo, en el mercado de las pasadas elecciones catalanas los participantes obtuvieron de media 20,83€; y las ganancias oscilaron desde 0 hasta los 348,53€ que recibió el ganador. Dicha compensación será pagada después del cierre de mercado, cuando se haya elegido formalmente un nuevo gobierno en cada caso. La compensación se transferirá a través de una transferencia bancaria, lo cual solamente será posible a través de cuentas bancarias europeas, registradas con el nombre del participante. 
 
+_________________
+
+```{r pressure, echo=FALSE, out.width = '20%'}
+knitr::include_graphics("uzh.png")
+```
+
+Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous){target="_blank"}

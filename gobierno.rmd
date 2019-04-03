@@ -5,3 +5,12 @@ title: Predicción en vivo sobre el gobierno resultante
 ¿Cómo de probable es que estos sean los gobiernos resultantes?
 
 
+
+_________________
+
+```{r pressure, echo=FALSE, out.width = '20%'}
+knitr::include_graphics("uzh.png")
+```
+
+Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)
+
