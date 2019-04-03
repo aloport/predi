@@ -28,4 +28,4 @@ __________
 knitr::include_graphics("uzh.png")
 ```
 
-Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous){:target="_blank"}
+Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)
