@@ -9,6 +9,7 @@ title: Predicción en vivo sobre el gobierno resultante
 _________________
 
 ```{r graph0, echo=FALSE, out.width = '20%'}
+library(highcharter)
 
 highchart() %>% 
   hc_xAxis(categories = generales_reduce$datetime2, tickInterval = 1) %>% 

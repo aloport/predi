@@ -8,6 +8,7 @@ _________________
 
 
 ```{r pressure, echo=FALSE, out.width = '20%'}
+library(highcharter)
 
 highchart() %>% 
   hc_xAxis(categories = intrapolation_reduce$datetime2, tickInterval = 1) %>% 
