@@ -1,9 +1,22 @@
 name: "albertos-website"
 output_dir: "."
 navbar:
-  title: "Alberto López Ortega"
+  title: "PREDI 28A"
   left:
-    - text: "Home"
+    - text: "Inicio"
       href: index.html
-    - text: "About Me"
+    - text: "Gobierno resultante"
+      href: gobierno.html
+    - text: "Estimación de voto"
+      href: voto.html
+    - text: "Funcionamiento"     
+      href: projects.html 
+    - text: "Sobre nosotros"
       href: about.html
+    - text: "¿Quieres participar?"
+      href: participate.html
+output:
+  html_document:
+    theme: sandstone
+    css: 
+    

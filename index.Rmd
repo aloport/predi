@@ -1,5 +1,24 @@
 ---
-title: "Alberto López Ortega"
+title: "PREDI 28A"
 ---
+_________
+ Echa un ojo a nuestras predicciones diarias para el 28A: 
+ 
+-------------------
 
-Hello, World!
+- __[Gobierno resultante](http://thepredictionmarket.com)__
+
+- __[Estimación de voto a partidos](http://thepredictionmarket.com)__
+
+
+
+```{r, echo = FALSE, fig.align='center'}
+
+library(networkD3)
+data(MisLinks, MisNodes)
+forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source",
+             Target = "target", Value = "value", NodeID = "name",
+             Group = "group", opacity = 0.4)
+
+
+```
