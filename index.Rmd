@@ -8,7 +8,7 @@ _________
 
 - __[Gobierno resultante](http://thepredictionmarket.com)__
 
-- __[Estimación de voto a partidos](http://thepredictionmarket.com)__
+- __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html)__
 
 
 
@@ -21,4 +21,9 @@ forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source",
              Group = "group", opacity = 0.4)
 
 
+```
+
+
+```{r pressure, echo=FALSE, out.width = '20%'}
+knitr::include_graphics("uzh.png")
 ```
