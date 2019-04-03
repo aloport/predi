@@ -6,9 +6,9 @@ _________
  
 -------------------
 
-- __[Gobierno resultante](http://thepredictionmarket.com){:target="_blank"}__
+- __[Gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
 
-- __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html){:target="_blank"}__
+- __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html)__
 
 
 
@@ -24,8 +24,5 @@ forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source",
 ```
 
 __________
-```{r pressure, echo=FALSE, out.width = '20%'}
-knitr::include_graphics("uzh.png")
-```
 
 Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)

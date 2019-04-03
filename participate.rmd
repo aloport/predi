@@ -18,8 +18,4 @@ Para poder comprar y vender en el mercado de predicción te entregaremos 10 euro
 
 _________________
 
-```{r pressure, echo=FALSE, out.width = '20%'}
-knitr::include_graphics("uzh.png")
-```
-
 Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)

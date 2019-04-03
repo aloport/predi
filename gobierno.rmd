@@ -2,14 +2,25 @@
 title: Predicción en vivo sobre el gobierno resultante
 ---
 
-¿Cómo de probable es que estos sean los gobiernos resultantes?
+¿Cómo de probable es que estos sean los gobiernos resultantes? [Actualizado: 3 de abril de 2019]
 
 
 
 _________________
 
-```{r pressure, echo=FALSE, out.width = '20%'}
-knitr::include_graphics("uzh.png")
+```{r graph0, echo=FALSE, out.width = '20%'}
+
+highchart() %>% 
+  hc_xAxis(categories = generales_reduce$datetime2, tickInterval = 1) %>% 
+  hc_add_series(name = "Gobierno de coalición de izquierdas", data = generales_reduce$coalition_left , color = "#9A0000") %>% 
+  hc_add_series(name = "Gobierno de coalición de centro", data = generales_reduce$coalition_center, color= "#C57420") %>% 
+  hc_add_series(name = "Gobierno de coalición de derechas", data = generales_reduce$coalition_right, color = "#0000BA") %>% 
+  hc_add_series(name = "Gobierno monocolor de izquierdas", data = generales_reduce$singlecolor_left, color= "#FF3827") %>% 
+  hc_add_series(name = "Gobierno monocolor de centro", data = generales_reduce$singlecolor_center, color= "#FF9300") %>% 
+  hc_add_series(name = "Gobierno monocolor de derechas", data = generales_reduce$singlecolor_right, color= "#04AAFF") %>% 
+  hc_add_series(name = "Repetición de elecciones", data = generales_reduce$repetition_elections, color= "#A9A9A9")
+
+
 ```
 
 Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)

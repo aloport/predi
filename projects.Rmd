@@ -14,9 +14,5 @@ A diferencia de las encuestas donde las muestra de los participantes debe ser re
 
 _________________
 
-```{r pressure, echo=FALSE, out.width = '20%'}
-knitr::include_graphics("uzh.png")
-```
-
 Contact: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)
 
