@@ -1,16 +1,55 @@
 ---
-title: "PREDI 28A"
+title: "PREDI"
 ---
 _________
- Echa un ojo a nuestras predicciones diarias para el 28A: 
+ Bienvenid@ a __PREDI__, la herramienta electoral que ofrece __predicciones diarias__ para el 28A. 
+ 
+
+A continuación, los resultados actualizados __[5 de abril de 2019]__. 
  
 -------------------
 
 - __[Gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
 
+```{r, echo = FALSE, fig.align='center'}
+myColors_gen <- c("#0000BA", "#9A0000", "#A9A9A9", "#C57420", "#FF3827", "#FF9300", "#04AAFF")
+ 
+library(DT)
+
+datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobierno', 'Probabilidad', 'Tendencia'), extensions = 'FixedColumns',
+  options = list(
+    dom = 't',
+    scrollX = TRUE,
+    fixedColumns = TRUE
+  )) %>%
+  formatStyle(
+    'diff',
+    color = styleInterval(c(-0.001, 0.001), c('red', 'black', 'green'))
+  ) %>%
+  formatStyle('type', fontWeight = 'bold')
+
+
+
+```
+
 - __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html)__
 
+```{r, echo = FALSE, fig.align='center'}
 
+
+datatable(intrapolation_little, rownames=FALSE, colnames = c('Partido', 'Voto', 'Tendencia'), extensions = 'FixedColumns',
+  options = list(
+    dom = 't',
+    scrollX = TRUE,
+    fixedColumns = TRUE
+  )) %>%
+  formatStyle(
+    'diff',
+    color = styleInterval(c(-0.001, 0.001), c('red', 'black', 'green'))
+  ) %>%
+  formatStyle('party', fontWeight = 'bold')
+
+```
 
 ```{r, echo = FALSE, fig.align='center'}
 
