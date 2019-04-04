@@ -9,7 +9,7 @@ A continuación, los resultados actualizados __[5 de abril de 2019]__.
  
 -------------------
 
-- __[Gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
+- __[Predicción sobre el gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
 
 ```{r, echo = FALSE, fig.align='center'}
 myColors_gen <- c("#0000BA", "#9A0000", "#A9A9A9", "#C57420", "#FF3827", "#FF9300", "#04AAFF")
