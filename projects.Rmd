@@ -2,7 +2,11 @@
 title: ¿Cómo funciona el mercado de predicción?
 ---
 
-El mecanismo de un mercado de predicción se asemeja mucho al de un mercado bursátil. Sin embargo, en lugar de comerciar con productos financieros, los participantes en el mercado comercian con acciones sobre eventos políticos futuros. En nuestro mercado para las elecciones generales del 28A, por ejemplo, los participantes tienen que predecir dos tipos de eventos. El primer tipo de evento es el resultado electoral queda a obtener cada uno de los principales partidos en porcentaje de votos. El segundo evento es cuál va ser el gobierno resultante tras las elecciones, en el que cada uno de los escenarios más probables es un contrato en el mercado. 
+El mecanismo del mercado de predicción se asemeja mucho al de un mercado bursátil. Sin embargo, en lugar de comerciar con productos financieros, los participantes en el mercado comercian con acciones sobre eventos políticos futuros. En nuestro mercado para las elecciones generales del 28A, por ejemplo, los participantes tienen que predecir dos tipos de eventos. 
+
+- _Estimación de voto._ El primer tipo de evento es el resultado electoral que va a obtener cada uno de los principales partidos en porcentaje de votos. Para ello, tenemos un submercado para cada uno de los cinco grandes partidos (PSOE, PP, Ciudadanos, Unidas Podemos y VOX). Posteriormente, interpolamos las probabilidades acumuladas en un modelo agregado y proyectamos la estimación conjunta que puedes consultar diariamente aquí.  
+
+- _Gobierno resultante._ El segundo evento que tienen que predecir los participantes es cuál va ser el gobierno resultante tras las elecciones, en el que cada uno de los escenarios más probables es un contrato en el mercado. 
 
 En el mercado sobre el gobierno resultante, por ejemplo, los participantes compran y venden un contrato llamado “un gobierno de coalición de izquierdas”, lo cual significa en nuestro mercado que PSOE y al menos otro partido distinto a Ciudadanos formarán el próximo gobierno de España. En cuanto el mercado se pone en marcha, el precio variante de este contrato refleja la probabilidad de que tenga lugar el evento descrito en él. Los participantes pueden comprar acciones si piensan que la probabilidad de que este evento tenga lugar es mayor que la sugerida por su precio y vender acciones si piensan que la probabilidad de dicho evento es menor.
 

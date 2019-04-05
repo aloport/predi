@@ -1,7 +1,7 @@
 name: "albertos-website"
 output_dir: "."
 navbar:
-  title: "PREDI 28A"
+  title: "PREDI"
   left:
     - text: "Inicio"
       href: index.html
@@ -17,6 +17,7 @@ navbar:
       href: participate.html
 output:
   html_document:
-    theme: sandstone
+    theme: yeti
+    highlight: pygments 
     css: 
     

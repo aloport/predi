@@ -1,8 +1,6 @@
----
-title: "PREDI"
----
+
 _________
- Bienvenid@ a __PREDI__, la herramienta electoral basada en mercados de predicción que ofrece __predicciones diarias__ para el 28A. 
+ Bienvenid@ a __PREDI__, la herramienta electoral basada en mercados de predicción que ofrece __predicciones diarias para  las elecciones generales del 28A.__ 
  
 
 A continuación, los resultados actualizados __[5 de abril de 2019]__. 
