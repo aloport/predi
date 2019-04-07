@@ -9,3 +9,4 @@ setwd("/Users/ortega/Desktop/website/predi.io")
 #render your sweet site. 
 rmarkdown::render_site()
 
+
