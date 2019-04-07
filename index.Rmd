@@ -1,4 +1,3 @@
-
 _________
  Bienvenid@ a __PREDI__, la herramienta electoral basada en mercados de predicción que ofrece __predicciones diarias para  las elecciones generales del 28A.__ 
  
@@ -9,16 +8,16 @@ A continuación, los resultados actualizados __[5 de abril de 2019]__.
 
 - __[Predicción sobre el gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
 
-```{r, echo = FALSE, fig.align='center'}
+```{r holio1, echo = FALSE, fig.align='center'}
 myColors_gen <- c("#0000BA", "#9A0000", "#A9A9A9", "#C57420", "#FF3827", "#FF9300", "#04AAFF")
  
 library(DT)
 
 datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobierno', 'Probabilidad', 'Tendencia'), extensions = 'FixedColumns',
-  options = list(
-    dom = 't',
-    scrollX = TRUE,
-    fixedColumns = TRUE
+  options = list( dom= "t",
+    scrollX = FALSE,
+    fixedColumns = TRUE,
+  scrollCollapse = TRUE, pageLength = 10
   )) %>%
   formatStyle(
     'diff',
@@ -27,19 +26,17 @@ datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobie
   formatStyle('type', fontWeight = 'bold')
 
 
-
 ```
 
 - __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html)__
 
-```{r, echo = FALSE, fig.align='center'}
-
+```{r holio2, echo = FALSE, fig.align='center'}
 
 datatable(intrapolation_little, rownames=FALSE, colnames = c('Partido', 'Voto', 'Tendencia'), extensions = 'FixedColumns',
   options = list(
-    dom = 't',
+    dom = 'r',
     scrollX = TRUE,
-    fixedColumns = TRUE
+    fixedColumns = TRUE, pageLength = 10
   )) %>%
   formatStyle(
     'diff',
@@ -47,12 +44,13 @@ datatable(intrapolation_little, rownames=FALSE, colnames = c('Partido', 'Voto', 
   ) %>%
   formatStyle('party', fontWeight = 'bold')
 
+
 ```
 
 
 [Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
 
-```{r, echo = FALSE, fig.align='center'}
+```{r holio3, echo = FALSE, fig.align='center'}
 
 library(networkD3)
 data(MisLinks, MisNodes)
