@@ -50,17 +50,6 @@ datatable(intrapolation_little, rownames=FALSE, colnames = c('Partido', 'Voto', 
 
 [Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
 
-```{r holio3, echo = FALSE, fig.align='center'}
-
-library(networkD3)
-data(MisLinks, MisNodes)
-forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source",
-             Target = "target", Value = "value", NodeID = "name",
-             Group = "group", opacity = 0.4)
-
-
-```
-
-
+_____
 
 Contacto: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)

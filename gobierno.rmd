@@ -26,5 +26,7 @@ highchart() %>%
 
 ```
 
+_____
+
 Contacto: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)
 
