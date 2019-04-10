@@ -43,7 +43,7 @@ datatable(Ejemplo_2, extensions = 'FixedColumns',
 ```
 
 
-En este caso, el porcentaje de voto estimado para el PP por nuestro modelo sería un 21%. Esta misma operación la repetimos en los submercados de los otros partidos. Nuestras estimaciones de voto diarias son el resultado de la agregación de estas operaciones.
+En este caso, el porcentaje de voto estimado para el PP por nuestro modelo sería un 21%. Esta misma operación la repetimos en los submercados de los otros partidos. Como último paso, corregimos el resultado de acuerdo a la cantidad estimada de "Otros" cuando la probabilidad acumulada de los cinco partidos supera la media de las encuestas. Nuestras estimaciones de voto diarias son el resultado de la agregación de estas operaciones.
 
 ## Ventajas
 
