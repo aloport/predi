@@ -29,26 +29,6 @@ datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobie
 
 ```
 
-- __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html)__
-
-```{r holio2, echo = FALSE, fig.align='center'}
-
-datatable(intrapolation_little, rownames=FALSE, colnames = c('Partido', 'Voto', 'Tendencia'), extensions = 'FixedColumns',
-  options = list(
-    dom = 'r',
-    scrollX = TRUE,
-    fixedColumns = TRUE, pageLength = 10
-  )) %>%
-  formatStyle(
-    'diff',
-    color = styleInterval(c(-0.001, 0.001), c('red', 'black', 'green'))
-  ) %>%
-  formatStyle('party', fontWeight = 'bold')
-
-
-```
-
-
 [Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
 
 _____
