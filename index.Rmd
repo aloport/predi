@@ -1,9 +1,9 @@
 _________
- Bienvenid@ a __PREDI__, la herramienta electoral basada en mercados de predicción que ofrece __predicciones diarias para  las elecciones generales del 28A.__ 
+ Bienvenid@ a __PREDI__, la herramienta electoral basada en mercados de predicción que ofrece __predicciones diarias para  las elecciones en España.__ 
 
  
 
-A continuación, los resultados actualizados __[29 de abril de 2019]__. 
+A continuación, las predicciones sobre cuál será el gobierno resultante tras el 28A __[actualizadas el 30 de abril de 2019]__. 
  
 -------------------
 
@@ -28,6 +28,8 @@ datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobie
 
 
 ```
+
+_Y muy pronto, ¡predicciones para las elecciones del 26M!_
 
 [Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
 
