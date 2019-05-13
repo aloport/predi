@@ -23,7 +23,7 @@ highchart() %>%
 
 
 ```
-_*Un gobierno mixto es aquel en el que participan/se sustentan en Junts per Cat y PSC o BeC._
+*Un gobierno mixto es aquel en el que participan/se sustentan en Junts per Cat y PSC o BeC.
 _____
 
 Contacto: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)
