@@ -5,10 +5,28 @@ navbar:
   left:
     - text: "Inicio"
       href: index.html
-    - text: "Gobierno resultante"
-      href: gobierno.html
-    - text: "Estimación de voto"
-      href: voto.html
+    - text: "Elecciones Generales"
+      href: gobierno_esp_19.html
+    - text: "Elecciones Autonómicas"
+      menu:
+      - text: "C. Madrid"
+        href: gobierno_cma_19.html
+      - text: "Aragón"
+        href: gobierno_ara_19.html
+      - text: "I. Baleares"
+        href: gobierno_bal_19.html
+      - text: "Extremadura"
+        href: gobierno_ext_19.html
+    - text: "Elecciones Locales"
+      menu:
+      - text: "Madrid"
+        href: gobierno_mad_19.html
+      - text: "Barcelona"
+        href: gobierno_bar_19.html
+      - text: "Valencia"
+        href: gobierno_val_19.html
+    - text: "Elecciones Europeas"
+      href: gobierno_eu_19.html
     - text: "Funcionamiento"     
       href: projects.html 
     - text: "Sobre nosotros"

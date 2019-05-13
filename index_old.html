@@ -297,10 +297,49 @@ $(document).ready(function () {
   <a href="index.html">Inicio</a>
 </li>
 <li>
-  <a href="gobierno.html">Gobierno resultante</a>
+  <a href="gobierno_esp_19.html">Elecciones Generales</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Elecciones Autonómicas
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="gobierno_cma_19.html">C. Madrid</a>
+    </li>
+    <li>
+      <a href="gobierno_ara_19.html">Aragón</a>
+    </li>
+    <li>
+      <a href="gobierno_bal_19.html">I. Baleares</a>
+    </li>
+    <li>
+      <a href="gobierno_ext_19.html">Extremadura</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Elecciones Locales
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="gobierno_mad_19.html">Madrid</a>
+    </li>
+    <li>
+      <a href="gobierno_bar_19.html">Barcelona</a>
+    </li>
+    <li>
+      <a href="gobierno_val_19.html">Valencia</a>
+    </li>
+  </ul>
 </li>
 <li>
-  <a href="voto.html">Estimación de voto</a>
+  <a href="gobierno_eu_19.html">Elecciones Europeas</a>
 </li>
 <li>
   <a href="projects.html">Funcionamiento</a>
@@ -334,13 +373,13 @@ $(document).ready(function () {
 <ul>
 <li><strong><a href="https://aloport.github.io/predi/gobierno.html">Predicción sobre el gobierno resultante</a></strong></li>
 </ul>
-<div id="htmlwidget-2957170149dbd51bbd39" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2957170149dbd51bbd39">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["Gobierno monocolor de izquierdas","Gobierno de coalición de izquierdas","Gobierno monocolor de centro","Repetición de elecciones"],[49.73,29.75,6.67,6.59],[1.74,-0.46,-1.18,-0.38]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Tipo de gobierno<\/th>\n      <th>Probabilidad<\/th>\n      <th>Tendencia<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","scrollX":false,"fixedColumns":true,"scrollCollapse":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':isNaN(parseFloat(value)) ? '' : value <= -0.001000 ? 'red' : value <= 0.001000 ? 'black' : 'green'});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-a4b75c751e0aa133f7d1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a4b75c751e0aa133f7d1">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["Gobierno monocolor de izquierdas","Gobierno de coalición de izquierdas","Gobierno monocolor de centro","Repetición de elecciones"],[49.73,29.75,6.67,6.59],[1.74,-0.46,-1.18,-0.38]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Tipo de gobierno<\/th>\n      <th>Probabilidad<\/th>\n      <th>Tendencia<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","scrollX":false,"fixedColumns":true,"scrollCollapse":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':isNaN(parseFloat(value)) ? '' : value <= -0.001000 ? 'red' : value <= 0.001000 ? 'black' : 'green'});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
 <ul>
 <li><strong><a href="https://aloport.github.io/predi/voto.html">Estimación de voto a partidos</a></strong></li>
 </ul>
-<div id="htmlwidget-cd797e302f5d9b046147" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cd797e302f5d9b046147">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["PSOE","PP","Ciudadanos","Unidas Podemos","VOX"],[27.76,19.77,14.77,13.9,13.35],[-0.47,-0.11,-0.16,-0.22,-0.15]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Partido<\/th>\n      <th>Voto<\/th>\n      <th>Tendencia<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"r","scrollX":true,"fixedColumns":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':isNaN(parseFloat(value)) ? '' : value <= -0.001000 ? 'red' : value <= 0.001000 ? 'black' : 'green'});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-14cc2bac6cd7edb9c41f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-14cc2bac6cd7edb9c41f">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["PSOE","PP","Ciudadanos","Unidas Podemos","VOX"],[27.76,19.77,14.77,13.9,13.35],[-0.47,-0.11,-0.16,-0.22,-0.15]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Partido<\/th>\n      <th>Voto<\/th>\n      <th>Tendencia<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"r","scrollX":true,"fixedColumns":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':isNaN(parseFloat(value)) ? '' : value <= -0.001000 ? 'red' : value <= 0.001000 ? 'black' : 'green'});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
 <p><a href="https://aloport.github.io/predi/projects.html">Metodología</a> • <a href="https://aloport.github.io/predi/about.html">Sobre nuestro proyecto de investigación</a> • <a href="https://aloport.github.io/predi/participate.html">¿Quieres participar en el mercado de predicción?</a></p>
 <hr />
 <p>Contacto: Alberto López Ortega <em><a href="mailto:alberto.lopezortega@uzh.ch" class="email">alberto.lopezortega@uzh.ch</a></em> , <a href="https://twitter.com/bertous">bertous</a></p>

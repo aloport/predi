@@ -11,9 +11,9 @@
 
 
 
-<title>¿Cómo funciona el mercado de predicción?</title>
+<title>Predicción diaria sobre el presidente resultante de la Comisión Europea tras las elecciones europeas del 26M.</title>
 
-<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -23,15 +23,46 @@
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
-<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="site_libs/datatables-binding-0.5/datatables.js"></script>
-<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="site_libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
-<link href="site_libs/dt-ext-fixedcolumns-1.10.16/css/fixedColumns.dataTables.min.css" rel="stylesheet" />
-<script src="site_libs/dt-ext-fixedcolumns-1.10.16/js/dataTables.fixedColumns.min.js"></script>
-<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="site_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="site_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="site_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="site_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="site_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="site_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="site_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="site_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="site_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="site_libs/highchart-binding-0.7.0/highchart.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -362,33 +393,17 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">¿Cómo funciona el mercado de predicción?</h1>
+<h1 class="title toc-ignore">Predicción diaria sobre el presidente resultante de la Comisión Europea tras las elecciones europeas del 26M.</h1>
 
 </div>
 
 
-<p>El mecanismo del mercado de predicción se asemeja mucho al de un mercado bursátil. Sin embargo, en lugar de comerciar con productos financieros, <a href="https://aloport.github.io/predi/participate.html">los participantes</a> en el mercado comercian con acciones sobre eventos políticos futuros. En nuestro mercado para las elecciones generales del 28A, por ejemplo, los participantes tienen que predecir dos tipos de eventos.</p>
-<ul>
-<li><em>Gobierno resultante.</em> El primer evento que tienen que predecir los participantes es cuál va ser el gobierno resultante tras las elecciones, en el que cada uno de los escenarios más probables es un contrato en el mercado.</li>
-</ul>
-<p>En este submercado los participantes compran y venden, por ejemplo, un contrato llamado “un gobierno de coalición de izquierdas”, lo cual significa en nuestro mercado que PSOE y al menos otro partido distinto a Ciudadanos formarán el próximo gobierno de España. En cuanto el mercado se pone en marcha, el precio variante de este contrato refleja la probabilidad de que tenga lugar el evento descrito en él. Los participantes pueden comprar acciones si piensan que la probabilidad de que este evento tenga lugar es mayor que la sugerida por su precio y vender acciones si piensan que la probabilidad de dicho evento es menor. Así, conforme el precio de cada contrato refleja la probabilidad de que se consituya cada tipo de gobierno resultante.</p>
-<ul>
-<li><em>Estimación de voto.</em> El segundo tipo de evento es el resultado electoral que va a obtener cada uno de los principales partidos en porcentaje de votos. Para ello, tenemos un submercado para cada uno de los cinco grandes partidos (PSOE, PP, Ciudadanos, Unidas Podemos y VOX). En cada uno de estos mercados, los participantes tienen que asignar probabilidades a los posibles resultados electorales de cada partido.</li>
-</ul>
-<p>A modo de ejemplo, observa la siguiente tabla. La primera columna se corresponde con el submercado del PP en el que los participantes tienen que asignar probabilidades a estos márgenes de voto. La segunda columna presenta probabilidades ficticias asignadas por los participantes.</p>
-<div id="htmlwidget-5ebc5ac3ffba754be28a" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5ebc5ac3ffba754be28a">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["1","2","3","4","5"],["Contrato A","Contrato B","Contrato C","Contrato D","Contrato E"],["17% votos o menos","17%-19'99% votos","20%-22'99% votos","23%-25'99% votos","26% votos o más"],["10%","20%","40%","20%","10%"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Contratos de voto al PP<\/th>\n      <th>Margen de estimación de voto al PP<\/th>\n      <th>Probabilidad de cada contrato (ejemplo)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","scrollX":false,"fixedColumns":true,"scrollCollapse":true,"pageLength":10,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
-<p>Posteriormente, calculamos las probabilidades acumuladas de estas estimaciones e interpolamos cuál es la estimación que se correspondería con el 50% de probabilidades acumuladas. Es decir, estimamos el resultado más probable para este partido.</p>
-<div id="htmlwidget-4cc871b58b1e1ca71171" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4cc871b58b1e1ca71171">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["1","2","3","4","5","6","7"],["100% de votos","&gt; 26% de votos","&gt; 23% de votos","21% de votos","&gt; 20% de votos","&gt; 17% de votos","&gt; 0% de votos"],["0%","10%","30%","50%","70%","90%","100%"],["Ninguno","Contrato E","Contrato D + Contrato E","Resultado de la interpolación","Contrato C + Contrato D + Contrato E","Contrato B + Contrato C +  Contrato D + Contrato E","Contrato A + Contrato B + Contrato C + Contrato D + Contrato E"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Estimación de voto al PP<\/th>\n      <th>Probabilidad acumulada<\/th>\n      <th>Agregación<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"r","scrollX":false,"fixedColumns":true,"scrollCollapse":true,"pageLength":10,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"rowCallback":"function(row, data) {\nvar value=data[0]; $(row).css({'font-weight':value == 4.000000 ? 'bold' : ''});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
-<p>En este caso, el porcentaje de voto estimado para el PP por nuestro modelo sería un 21%. Esta misma operación la repetimos en los submercados de los otros partidos. Como último paso, corregimos el resultado de acuerdo a la cantidad estimada de “Otros” cuando la probabilidad acumulada de los cinco partidos supera la media de las encuestas. Nuestras estimaciones de voto diarias son el resultado de la agregación de estas operaciones.</p>
-<div id="ventajas" class="section level2">
-<h2>Ventajas</h2>
-<p>El mercado de predicción conlleva algunas ventajas sustanciales sobre otros modelos de predicción como las encuestas. En este sentido, la predicción de los resultados cambia en vivo. Es decir, el mercado tiene el potencial de mostrar el efecto directo que tiene un evento, por ejemplo, sobre las expectativas de voto de un partido. Otra ventaja importante es que permite predecir eventos complejos como cuál va a ser el gobierno que conforme tras las próximas elecciones. En este mercado, los participantes tienen que agregar la participación electoral, los resultados esperados de cada partido y la política de pactos que estos pueden seguir. Por último, el mercado tiene una ventaja estratégica y es que, al no ser una encuesta, no está sujeto a prohibiciones de publicación durante la última semana antes de las elecciones.</p>
-<p>A diferencia de las encuestas donde las muestra de los participantes debe ser representativa de la población, en nuestro mercado reclutamos participantes interesados por la política (la mayoría de ellos profesores y alumnos de ciencias sociales de universidades españolas). Esto es importante porque su labor consiste en traducir en probabilidades la información a su alcance (encuestas, de elecciones precedentes, noticias, eventos). Como el objetivo es puramente científico, en nuestro mercado los participantes no pueden endeudarse o invertir su propio dinero. En cambio, les entregamos diez euros. Este montante, que puede subir o bajar en función del buen rendimiento del participante mientras transcurre el juego, sirve de incentivo económico para motivar el acierto y bloquear posibles sesgos.</p>
+<p>¿Cómo de probable es que estos sean los gobiernos resultantes?</p>
+<hr />
+<div id="htmlwidget-67c27035a535f82c5987" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-67c27035a535f82c5987">{"x":{"hc_opts":{"title":{"text":null},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"categories":["2019-05-01","2019-05-01","2019-05-01","2019-05-01","2019-05-01","2019-05-01","2019-05-01","2019-05-01","2019-05-01","2019-05-01","2019-05-02","2019-05-02","2019-05-02","2019-05-02","2019-05-02","2019-05-02","2019-05-02","2019-05-02","2019-05-03","2019-05-03","2019-05-04","2019-05-04","2019-05-04","2019-05-06","2019-05-06","2019-05-06","2019-05-06","2019-05-06","2019-05-06","2019-05-07","2019-05-07","2019-05-08","2019-05-09","2019-05-10","2019-05-10","2019-05-10","2019-05-10","2019-05-10","2019-05-12"],"tickIntereu":1},"series":[{"data":[43.44,43.33,43.4,43.33,43.4,43.76,41.51,45.07,52.2,52.94,53.65,53.61,54.31,53.07,52.93,53.29,51.85,52.35,52.74,52.85,49.02,52.85,52.99,53.35,53.03,59.83,59.97,60.03,59.98,59.82,61.42,56.42,56.52,57.22,56.61,56.26,55.8,55.77,60.11],"name":"Manfred Weber (EPP)","color":"#33a1e0"},{"data":[14.74,14.93,14.95,14.92,14.95,14.84,19.01,17.77,15.28,15.02,14.77,14.76,14.52,16.38,16.58,16.44,18.6,18.38,18.22,18.17,23.81,18.17,18.12,17.96,18.42,15.51,15.32,15.33,15.32,15.53,13.38,20.11,20.05,19.7,19.5,19.67,19.51,19.5,17.39],"name":"Frans Timmermans (PES)","color":"#FF3827"},{"data":[10.49,10.47,10.35,10.33,10.35,10.27,9.74,9.11,7.83,7.7,7.57,7.56,7.44,7.27,7.25,7.19,7,6.91,6.85,6.84,6.35,6.84,6.82,6.76,6.72,5.65,5.67,5.67,5.75,5.73,5.88,5.4,5.4,5.3,5.24,5.29,5.24,5.24,4.68],"name":"Jan Zahradil (ECR)","color":"#1725c4"},{"data":[8.17,8.15,8.16,8.15,8.02,7.96,7.56,7.06,6.07,5.96,5.87,5.96,5.86,5.72,5.71,5.66,5.51,5.44,5.4,5.39,4.99,5.39,5.37,5.32,5.29,4.45,4.46,4.47,4.46,4.45,4.57,4.2,4.19,4.12,4.07,4.11,4.07,4.07,3.63],"name":"Viola Tomic (GUE)","color":"#a02e2c"},{"data":[10.37,10.35,10.36,10.5,10.52,10.44,9.91,9.26,7.97,7.83,7.7,7.69,7.56,7.39,7.37,7.31,7.11,7.03,6.97,6.95,6.45,6.95,6.93,6.87,6.83,5.75,5.76,5.68,5.67,5.66,5.82,5.34,5.33,5.23,6.2,6.25,7,7.05,6.28],"name":"Guy Verhofstadt (ALDE)","color":"#e8af04"},{"data":[8.79,8.77,8.78,8.76,8.78,8.73,8.28,7.74,6.65,6.54,6.43,6.42,6.32,6.17,6.15,6.11,5.94,5.88,5.82,5.81,5.39,5.81,5.79,5.74,5.7,4.8,4.81,4.82,4.81,4.8,4.92,4.53,4.51,4.44,4.39,4.43,4.39,4.39,3.92],"name":"Otro/a","color":"#8c8c8c"}],"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>","crosshairs":true,"backgroundColor":"#FBFEFF","borderWidth":0}},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
 <hr />
 <p>Contacto: Alberto López Ortega <em><a href="mailto:alberto.lopezortega@uzh.ch" class="email">alberto.lopezortega@uzh.ch</a></em> , <a href="https://twitter.com/bertous">bertous</a></p>
-</div>
 
 
 

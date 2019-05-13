@@ -3,33 +3,33 @@ _________
 
  
 
-A continuación, las predicciones sobre cuál será el gobierno resultante tras el 28A __[actualizadas el 4 de mayo de 2019]__. 
+A continuación, las predicciones sobre cuál será el gobierno resultante tras las Generales del 28A y las autonómicas y locales del 26M __[actualizadas el 13 de mayo de 2019]__. 
  
 -------------------
 
-- __[Predicción sobre el gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
+- [España](https://aloport.github.io/predi/gobierno_esp_19.html) 
+- [C. Madrid](https://aloport.github.io/predi/gobierno_cma_19.html) • [C. Madrid](https://aloport.github.io/predi/gobierno_cma_19.html) • [Aragón](https://aloport.github.io/predi/gobierno_ara_19.html) •[I. Baleares](https://aloport.github.io/predi/gobierno_bal_19.html) • [Extremadura](https://aloport.github.io/predi/gobierno_ext_19.html) 
+- [Madrid](https://aloport.github.io/predi/gobierno_mad_19.html) • [Valencia](https://aloport.github.io/predi/gobierno_val_19.html) • [Barcelona](https://aloport.github.io/predi/gobierno_bar_19.html)
+
+Gobierno resultante en...
 
 ```{r holio1, echo = FALSE, fig.align='center'}
-myColors_gen <- c("#0000BA", "#9A0000", "#A9A9A9", "#C57420", "#FF3827", "#FF9300", "#04AAFF")
- 
-library(DT)
-
-datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobierno', 'Probabilidad', 'Tendencia'), extensions = 'FixedColumns',
-  options = list( dom= "t",
-    scrollX = FALSE,
-    fixedColumns = TRUE,
-  scrollCollapse = TRUE, pageLength = 10
-  )) %>%
-  formatStyle(
-    'diff',
-    color = styleInterval(c(-0.001, 0.001), c('red', 'black', 'green'))
-  ) %>%
-  formatStyle('type', fontWeight = 'bold')
+   index_graph %>% 
+    hchart(., type = "column", 
+           hcaes(x = set_id, 
+                 y = prob, 
+                 group = type,
+                 color = coloract)) %>% 
+      hc_plotOptions(column = list(stacking = "normal")) %>%
+      hc_yAxis(max = 100) %>% 
+      hc_xAxis(title = list(text = "")) %>% 
+      hc_yAxis(title = list(text = "Probabilidad estimada")) %>% 
+      hc_legend(enabled = F)
 
 
 ```
 
-_Y muy pronto, ¡predicciones para las elecciones del 26M!_
+_[¿Y la Europea?](https://aloport.github.io/predi/gobierno_eu_19.html)_
 
 [Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
 
