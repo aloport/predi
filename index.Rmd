@@ -30,7 +30,7 @@ Gobierno resultante en...
 
 - Primer partido en [C. Madrid](https://aloport.github.io/predi/primer_cma_19.html) • [Madrid](https://aloport.github.io/predi/primer_mad_19.html) • [Valencia](https://aloport.github.io/predi/primer_val_19.html) • [Barcelona](https://aloport.github.io/predi/primer_bar_19.html)
 
-
+Primer partido en...
 ```{r holio2, echo = FALSE, fig.align='center'}
 
    who_leads_index %>% 
