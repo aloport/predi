@@ -18,7 +18,6 @@ highchart() %>%
   hc_add_series(name = "Gobierno monocolor de izquierdas", data = gobierno_esp_19$singlecolor_left, color= "#FF3827") %>% 
   hc_add_series(name = "Gobierno monocolor de centro", data = gobierno_esp_19$singlecolor_center, color= "#FF9300") %>% 
   hc_add_series(name = "Gobierno monocolor de derechas", data = gobierno_esp_19$singlecolor_right, color= "#04AAFF") %>% 
-  hc_add_series(name = "Repetición de elecciones", data = gobierno_esp_19$repetition_elections, color= "#A9A9A9")   %>% 
   hc_tooltip(crosshairs = TRUE, backgroundColor = "#FBFEFF",
              shared = TRUE, borderWidth = 0, sort = TRUE,  table = TRUE)
 

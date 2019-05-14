@@ -1,0 +1,29 @@
+---
+title: Predicción diaria sobre el first resultante de las elecciones locales del 26M en Barcelona.
+---
+
+¿Cómo de probable es que estos partidos sean el que más concejales saque? 
+
+
+
+_________________
+
+```{r graph0, echo=FALSE, out.width = '20%'}
+
+highchart() %>% 
+  hc_xAxis(categories = first_bar_set$datetime2, tickInterbar = 1) %>% 
+  hc_add_series(name = "ERC", data = first_bar_set$ERC , color = "#fdd835") %>% 
+  hc_add_series(name = "Barcelona en Comú", data = first_bar_set$BComú, color= "#8e0000") %>% 
+  hc_add_series(name = "PSC", data = first_bar_set$PSC, color= "#FF3827") %>% 
+  hc_add_series(name = "Valls", data = first_bar_set$Valls, color= "#FF9300") %>% 
+  hc_add_series(name = "Otro/a", data = first_bar_set$Other, color= "#bdbdbd") %>% 
+  hc_tooltip(crosshairs = TRUE, backgroundColor = "#FBFEFF",
+             shared = TRUE, borderWidth = 0, sort = TRUE,  table = TRUE)
+
+
+```
+*Un first mixto es aquel en el que participan/se sustentan en Junts per Cat y PSC o BeC.
+_____
+
+Contacto: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)
+

@@ -8,27 +8,27 @@ navbar:
     href: gobierno_esp_19.html
   - text: "Elecciones Autonómicas"
     menu:
-    - text: "C. Madrid"
-      href: gobierno_cma_19.html
-    - text: "Aragón"
-      href: gobierno_ara_19.html
-    - text: "I. Baleares"
-      href: gobierno_bal_19.html
-    - text: "Extremadura"
-      href: gobierno_ext_19.html
+     - text: "Gobierno en C. Madrid"
+       href: gobierno_cma_19.html
+     - text: "Primer partido en C. Madrid"
+       href: primer_cma_19.html
+     - text: "Gobierno en C. Valenciana"
+       href: gobierno_cva_19.html
   - text: "Elecciones Locales"
     menu:
-    - text: "Madrid"
-      href: gobierno_mad_19.html
-    - text: "Barcelona"
-      href: gobierno_bar_19.html
-    - text: "Valencia"
-      href: gobierno_val_19.html
-  - text: "Elecciones Europeas"
-    href: gobierno_eu_19.html
+      - text: "Gobierno en Madrid"
+        href: gobierno_mad_19.html
+      - text: "Primer partido en Madrid"
+        href: primer_mad_19.html
+      - text: "Gobierno en Barcelona"
+        href: gobierno_bar_19.html
+      - text: "Primer partido en Barcelona"
+        href: primer_bar_19.html
+      - text: "Gobierno en Valencia"
+        href: gobierno_val_19.html
+      - text: "Primer partido en Valencia"
+        href: primer_val_19.html
   - text: "Funcionamiento"     
-    href: projects.html 
-  - text: "Sobre nosotros"
     href: about.html
   - text: "¿Quieres participar?"
     href: participate.html

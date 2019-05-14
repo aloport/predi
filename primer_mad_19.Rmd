@@ -1,0 +1,28 @@
+---
+title: Predicción diaria sobre el partido ganador de las elecciones locales del 26M en Madrid.
+---
+
+¿Cómo de probable es que estos partidos sean el primero en número de concejales?
+
+
+_________________
+
+```{r graph0, echo=FALSE, out.width = '20%'}
+
+highchart() %>% 
+  hc_xAxis(categories = first_mad_set$datetime2, tickInterval = 1) %>% 
+  hc_add_series(name = "PSOE", data = first_mad_set$PSOE , color = "#FF3827") %>% 
+  hc_add_series(name = "PP", data = first_mad_set$PP, color= "#04AAFF") %>% 
+  hc_add_series(name = "Ciudadanos", data = first_mad_set$Ciudadanos, color = "#FF9300") %>% 
+  hc_add_series(name = "Más Madrid", data = first_mad_set$`Más Madrid`, color= "#00766c") %>% 
+  hc_add_series(name = "Otro/a", data = first_mad_set$Other, color= "#bdbdbd") %>% 
+  hc_tooltip(crosshairs = TRUE, backgroundColor = "#FBFEFF",
+             shared = TRUE, borderWidth = 0, sort = TRUE,  table = TRUE)
+
+
+```
+
+_____
+
+Contacto: Alberto López Ortega _alberto.lopezortega@uzh.ch_ , [bertous](https://twitter.com/bertous)
+

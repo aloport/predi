@@ -7,9 +7,8 @@ A continuación, las predicciones sobre cuál será el gobierno resultante tras 
  
 -------------------
 
-- [España](https://aloport.github.io/predi/gobierno_esp_19.html) 
-- [C. Madrid](https://aloport.github.io/predi/gobierno_cma_19.html) • [C. Madrid](https://aloport.github.io/predi/gobierno_cma_19.html) • [Aragón](https://aloport.github.io/predi/gobierno_ara_19.html) •[I. Baleares](https://aloport.github.io/predi/gobierno_bal_19.html) • [Extremadura](https://aloport.github.io/predi/gobierno_ext_19.html) 
-- [Madrid](https://aloport.github.io/predi/gobierno_mad_19.html) • [Valencia](https://aloport.github.io/predi/gobierno_val_19.html) • [Barcelona](https://aloport.github.io/predi/gobierno_bar_19.html)
+- Gobierno resultante en [España](https://aloport.github.io/predi/gobierno_esp_19.html) • [C. Valenciana](https://aloport.github.io/predi/gobierno_cva_19.html)
+- Gobierno resultante en [C. Madrid](https://aloport.github.io/predi/gobierno_cma_19.html) • [Madrid](https://aloport.github.io/predi/gobierno_mad_19.html) • [Valencia](https://aloport.github.io/predi/gobierno_val_19.html) • [Barcelona](https://aloport.github.io/predi/gobierno_bar_19.html)
 
 Gobierno resultante en...
 
@@ -29,9 +28,28 @@ Gobierno resultante en...
 
 ```
 
-_[¿Y la Europea?](https://aloport.github.io/predi/gobierno_eu_19.html)_
+- Primer partido en [C. Madrid](https://aloport.github.io/predi/primer_cma_19.html) • [Madrid](https://aloport.github.io/predi/primer_mad_19.html) • [Valencia](https://aloport.github.io/predi/primer_val_19.html) • [Barcelona](https://aloport.github.io/predi/primer_bar_19.html)
+
+
+```{r holio2, echo = FALSE, fig.align='center'}
+
+   who_leads_index %>% 
+    hchart(., type = "column", 
+           hcaes(x = set_id, 
+                 y = prob, 
+                 group = type,
+                 color = coloract)) %>% 
+      hc_plotOptions(column = list(stacking = "normal")) %>%
+      hc_yAxis(max = 100) %>% 
+      hc_xAxis(title = list(text = "")) %>% 
+      hc_yAxis(title = list(text = "Probabilidad estimada")) %>% 
+      hc_legend(enabled = F)
+
+```
+
 
 [Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
+
 
 _____
 
