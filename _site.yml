@@ -33,7 +33,6 @@ navbar:
   - text: "¿Quieres participar?"
     href: participate.html
 output:
-  html_document:
+  rmarkdown::html_document:
     theme: yeti
-    css: 
     
