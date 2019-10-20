@@ -1,35 +1,55 @@
 _________
- Bienvenid@ a __PREDI__, la herramienta electoral basada en mercados de predicción que ofrece __predicciones diarias para  las elecciones en España.__ 
+ Bienvenid@ a __PREDI__, la herramienta electoral basada en mercados de predicción que ofrece __predicciones diarias para  las elecciones generales del 28A.__ 
 
  
 
-A continuación, las predicciones sobre cuál será el gobierno resultante tras las Generales del 28A y las autonómicas y locales del 10N __[actualizadas el 19 de julio de 2019]__. 
+A continuación, los resultados actualizados __[10 de noviembre de 2019]__. 
  
 -------------------
 
-- Gobierno resultante en [España](https://aloport.github.io/predi/gobierno_esp_19.html) • [C. Valenciana](https://aloport.github.io/predi/gobierno_cva_19.html)
-- Gobierno resultante en [C. Madrid](https://aloport.github.io/predi/gobierno_cma_19.html) • [Madrid](https://aloport.github.io/predi/gobierno_mad_19.html) • [Valencia](https://aloport.github.io/predi/gobierno_val_19.html) • [Barcelona](https://aloport.github.io/predi/gobierno_bar_19.html)
-
-Gobierno resultante en...
+- __[Predicción sobre el gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
 
 ```{r holio1, echo = FALSE, fig.align='center'}
-   index_graph %>% 
-    hchart(., type = "column", 
-           hcaes(x = set_id, 
-                 y = prob, 
-                 group = type,
-                 color = coloract)) %>% 
-      hc_plotOptions(column = list(stacking = "normal")) %>%
-      hc_yAxis(max = 100) %>% 
-      hc_xAxis(title = list(text = "")) %>% 
-      hc_yAxis(title = list(text = "Probabilidad estimada")) %>% 
-      hc_legend(enabled = F)
+myColors_gen <- c("#0000BA", "#9A0000", "#A9A9A9", "#C57420", "#FF3827", "#FF9300", "#04AAFF")
+ 
+library(DT)
+
+datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobierno', 'Probabilidad', 'Tendencia'), extensions = 'FixedColumns',
+  options = list( dom= "t",
+    scrollX = FALSE,
+    fixedColumns = TRUE,
+  scrollCollapse = TRUE, pageLength = 10
+  )) %>%
+  formatStyle(
+    'diff',
+    color = styleInterval(c(-0.001, 0.001), c('red', 'black', 'green'))
+  ) %>%
+  formatStyle('type', fontWeight = 'bold')
 
 
 ```
 
-[Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
+- __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html)__
 
+```{r holio2, echo = FALSE, fig.align='center'}
+
+datatable(intrapolation_little, rownames=FALSE, colnames = c('Partido', 'Voto', 'Tendencia'), extensions = 'FixedColumns',
+  options = list(
+    dom = 'r',
+    scrollX = TRUE,
+    fixedColumns = TRUE, pageLength = 10
+  )) %>%
+  formatStyle(
+    'diff',
+    color = styleInterval(c(-0.001, 0.001), c('red', 'black', 'green'))
+  ) %>%
+  formatStyle('party', fontWeight = 'bold')
+
+
+```
+
+
+[Metodología](https://aloport.github.io/predi/projects.html) • [Sobre nuestro proyecto de investigación](https://aloport.github.io/predi/about.html) • [¿Quieres participar en el mercado de predicción?](https://aloport.github.io/predi/participate.html)
 
 _____
 

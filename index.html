@@ -7,13 +7,14 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>index.utf8.md</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -23,46 +24,15 @@
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
-<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
-<link href="site_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
-<link href="site_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
-<script src="site_libs/highcharts-7.0.1/highcharts.js"></script>
-<script src="site_libs/highcharts-7.0.1/highcharts-3d.js"></script>
-<script src="site_libs/highcharts-7.0.1/highcharts-more.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/stock.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/map.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/annotations.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/boost.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/data.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/drilldown.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/item-series.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/exporting.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/export-data.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/funnel.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/heatmap.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/treemap.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/sankey.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/sunburst.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/vector.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/xrange.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/tilemap.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/venn.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/gantt.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/timeline.js"></script>
-<script src="site_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
-<script src="site_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
-<script src="site_libs/highcharts-7.0.1/plugins/motion.js"></script>
-<script src="site_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
-<script src="site_libs/highcharts-7.0.1/custom/reset.js"></script>
-<script src="site_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
-<script src="site_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
-<script src="site_libs/highchart-binding-0.7.0/highchart.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.5/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/dt-ext-fixedcolumns-1.10.16/css/fixedColumns.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-fixedcolumns-1.10.16/js/dataTables.fixedColumns.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -124,7 +94,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -285,18 +254,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -324,51 +281,18 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="gobierno_esp_19.html">Elecciones Generales</a>
-</li>
-<li class="dropdown">
+        <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Elecciones Autonómicas
+    Elecciones 10N
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="gobierno_cma_19.html">Gobierno en C. Madrid</a>
+      <a href="gobierno_esp_19_2.html">Predicción de voto</a>
     </li>
     <li>
-      <a href="primer_cma_19.html">Primer partido en C. Madrid</a>
-    </li>
-    <li>
-      <a href="gobierno_cva_19.html">Gobierno en C. Valenciana</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Elecciones Locales
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="gobierno_mad_19.html">Gobierno en Madrid</a>
-    </li>
-    <li>
-      <a href="primer_mad_19.html">Primer partido en Madrid</a>
-    </li>
-    <li>
-      <a href="gobierno_bar_19.html">Gobierno en Barcelona</a>
-    </li>
-    <li>
-      <a href="primer_bar_19.html">Primer partido en Barcelona</a>
-    </li>
-    <li>
-      <a href="gobierno_val_19.html">Gobierno en Valencia</a>
-    </li>
-    <li>
-      <a href="primer_val_19.html">Primer partido en Valencia</a>
+      <a href="voto_esp_19_2.html">Predicción de gobierno</a>
     </li>
   </ul>
 </li>
@@ -395,16 +319,19 @@ $(document).ready(function () {
 
 
 <hr />
-<p>Bienvenid@ a <strong>PREDI</strong>, la herramienta electoral basada en mercados de predicción que ofrece <strong>predicciones diarias para las elecciones en España.</strong></p>
-<p>A continuación, las predicciones sobre cuál será el gobierno resultante tras las Generales del 28A y las autonómicas y locales del 26M <strong>[actualizadas el 19 de julio de 2019]</strong>.</p>
+<p>Bienvenid@ a <strong>PREDI</strong>, la herramienta electoral basada en mercados de predicción que ofrece <strong>predicciones diarias para las elecciones generales del 28A.</strong></p>
+<p>A continuación, los resultados actualizados <strong>[10 de noviembre de 2019]</strong>.</p>
 <hr />
 <ul>
-<li>Gobierno resultante en <a href="https://aloport.github.io/predi/gobierno_esp_19.html">España</a> • <a href="https://aloport.github.io/predi/gobierno_cva_19.html">C. Valenciana</a></li>
-<li>Gobierno resultante en <a href="https://aloport.github.io/predi/gobierno_cma_19.html">C. Madrid</a> • <a href="https://aloport.github.io/predi/gobierno_mad_19.html">Madrid</a> • <a href="https://aloport.github.io/predi/gobierno_val_19.html">Valencia</a> • <a href="https://aloport.github.io/predi/gobierno_bar_19.html">Barcelona</a></li>
+<li><strong><a href="https://aloport.github.io/predi/gobierno.html">Predicción sobre el gobierno resultante</a></strong></li>
 </ul>
-<p>Gobierno resultante en…</p>
-<div id="htmlwidget-b178146a0735d8f08db3" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b178146a0735d8f08db3">{"x":{"hc_opts":{"title":{"text":null},"yAxis":{"title":{"text":"Probabilidad estimada"},"type":"linear","max":100},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"column":{"stacking":"normal"}},"series":[{"name":"Gobierno de coalición de centro","data":[{"coloract":"#C57420","datetime":"2019-07-18T00:00:00Z","set_id":"España","type":"Gobierno de coalición de centro","prob":6.19,"y":6.19,"color":"#C57420","name":"España"},{"coloract":"#C57420","datetime":"2019-07-10T00:00:00Z","set_id":"C. Valenciana","type":"Gobierno de coalición de centro","prob":0.87,"y":0.87,"color":"#C57420","name":"C. Valenciana"},{"coloract":"#C57420","datetime":"2019-07-17T00:00:00Z","set_id":"C. Madrid","type":"Gobierno de coalición de centro","prob":1.9,"y":1.9,"color":"#C57420","name":"C. Madrid"},{"coloract":"#C57420","datetime":"2019-07-11T00:00:00Z","set_id":"Madrid","type":"Gobierno de coalición de centro","prob":2.71,"y":2.71,"color":"#C57420","name":"Madrid"},{"coloract":"#C57420","datetime":"2019-07-03T00:00:00Z","set_id":"Valencia","type":"Gobierno de coalición de centro","prob":2.64,"y":2.64,"color":"#C57420","name":"Valencia"}],"type":"column"},{"name":"Gobierno de coalición de derechas","data":[{"coloract":"#0000BA","datetime":"2019-07-18T00:00:00Z","set_id":"España","type":"Gobierno de coalición de derechas","prob":0.71,"y":0.71,"color":"#0000BA","name":"España"},{"coloract":"#0000BA","datetime":"2019-07-10T00:00:00Z","set_id":"C. Valenciana","type":"Gobierno de coalición de derechas","prob":8.71,"y":8.71,"color":"#0000BA","name":"C. Valenciana"},{"coloract":"#0000BA","datetime":"2019-07-17T00:00:00Z","set_id":"C. Madrid","type":"Gobierno de coalición de derechas","prob":59.34,"y":59.34,"color":"#0000BA","name":"C. Madrid"},{"coloract":"#0000BA","datetime":"2019-07-11T00:00:00Z","set_id":"Madrid","type":"Gobierno de coalición de derechas","prob":67.74,"y":67.74,"color":"#0000BA","name":"Madrid"},{"coloract":"#0000BA","datetime":"2019-07-03T00:00:00Z","set_id":"Valencia","type":"Gobierno de coalición de derechas","prob":13.77,"y":13.77,"color":"#0000BA","name":"Valencia"}],"type":"column"},{"name":"Gobierno de coalición de izquierdas","data":[{"coloract":"#9A0000","datetime":"2019-07-18T00:00:00Z","set_id":"España","type":"Gobierno de coalición de izquierdas","prob":39.76,"y":39.76,"color":"#9A0000","name":"España"},{"coloract":"#9A0000","datetime":"2019-07-10T00:00:00Z","set_id":"C. Valenciana","type":"Gobierno de coalición de izquierdas","prob":80.14,"y":80.14,"color":"#9A0000","name":"C. Valenciana"},{"coloract":"#9A0000","datetime":"2019-07-17T00:00:00Z","set_id":"C. Madrid","type":"Gobierno de coalición de izquierdas","prob":12.71,"y":12.71,"color":"#9A0000","name":"C. Madrid"},{"coloract":"#9A0000","datetime":"2019-07-11T00:00:00Z","set_id":"Madrid","type":"Gobierno de coalición de izquierdas","prob":13.3,"y":13.3,"color":"#9A0000","name":"Madrid"},{"coloract":"#9A0000","datetime":"2019-07-12T00:00:00Z","set_id":"Barcelona","type":"Gobierno de coalición de izquierdas","prob":45.63,"y":45.63,"color":"#9A0000","name":"Barcelona"},{"coloract":"#9A0000","datetime":"2019-07-03T00:00:00Z","set_id":"Valencia","type":"Gobierno de coalición de izquierdas","prob":70.68,"y":70.68,"color":"#9A0000","name":"Valencia"}],"type":"column"},{"name":"Gobierno de coalición de soberanistas","data":[{"coloract":"#c79a00","datetime":"2019-07-12T00:00:00Z","set_id":"Barcelona","type":"Gobierno de coalición de soberanistas","prob":0.2,"y":0.2,"color":"#c79a00","name":"Barcelona"}],"type":"column"},{"name":"Gobierno de coalición mixto*","data":[{"coloract":"#bf5f82","datetime":"2019-07-12T00:00:00Z","set_id":"Barcelona","type":"Gobierno de coalición mixto*","prob":0.17,"y":0.17,"color":"#bf5f82","name":"Barcelona"}],"type":"column"},{"name":"Gobierno monocolor de centro","data":[{"coloract":"#FF9300","datetime":"2019-07-18T00:00:00Z","set_id":"España","type":"Gobierno monocolor de centro","prob":5.11,"y":5.11,"color":"#FF9300","name":"España"},{"coloract":"#FF9300","datetime":"2019-07-10T00:00:00Z","set_id":"C. Valenciana","type":"Gobierno monocolor de centro","prob":1.38,"y":1.38,"color":"#FF9300","name":"C. Valenciana"},{"coloract":"#FF9300","datetime":"2019-07-17T00:00:00Z","set_id":"C. Madrid","type":"Gobierno monocolor de centro","prob":2.62,"y":2.62,"color":"#FF9300","name":"C. Madrid"},{"coloract":"#FF9300","datetime":"2019-07-11T00:00:00Z","set_id":"Madrid","type":"Gobierno monocolor de centro","prob":2.12,"y":2.12,"color":"#FF9300","name":"Madrid"},{"coloract":"#FF9300","datetime":"2019-07-03T00:00:00Z","set_id":"Valencia","type":"Gobierno monocolor de centro","prob":2.51,"y":2.51,"color":"#FF9300","name":"Valencia"}],"type":"column"},{"name":"Gobierno monocolor de derechas","data":[{"coloract":"#04AAFF","datetime":"2019-07-18T00:00:00Z","set_id":"España","type":"Gobierno monocolor de derechas","prob":0.02,"y":0.02,"color":"#04AAFF","name":"España"},{"coloract":"#04AAFF","datetime":"2019-07-10T00:00:00Z","set_id":"C. Valenciana","type":"Gobierno monocolor de derechas","prob":1.78,"y":1.78,"color":"#04AAFF","name":"C. Valenciana"},{"coloract":"#04AAFF","datetime":"2019-07-17T00:00:00Z","set_id":"C. Madrid","type":"Gobierno monocolor de derechas","prob":11.43,"y":11.43,"color":"#04AAFF","name":"C. Madrid"},{"coloract":"#04AAFF","datetime":"2019-07-11T00:00:00Z","set_id":"Madrid","type":"Gobierno monocolor de derechas","prob":6.04,"y":6.04,"color":"#04AAFF","name":"Madrid"},{"coloract":"#04AAFF","datetime":"2019-07-03T00:00:00Z","set_id":"Valencia","type":"Gobierno monocolor de derechas","prob":3.08,"y":3.08,"color":"#04AAFF","name":"Valencia"}],"type":"column"},{"name":"Gobierno monocolor de izquierdas","data":[{"coloract":"#FF3827","datetime":"2019-07-18T00:00:00Z","set_id":"España","type":"Gobierno monocolor de izquierdas","prob":14.35,"y":14.35,"color":"#FF3827","name":"España"},{"coloract":"#FF3827","datetime":"2019-07-10T00:00:00Z","set_id":"C. Valenciana","type":"Gobierno monocolor de izquierdas","prob":6.13,"y":6.13,"color":"#FF3827","name":"C. Valenciana"},{"coloract":"#FF3827","datetime":"2019-07-17T00:00:00Z","set_id":"C. Madrid","type":"Gobierno monocolor de izquierdas","prob":6.4,"y":6.4,"color":"#FF3827","name":"C. Madrid"},{"coloract":"#FF3827","datetime":"2019-07-11T00:00:00Z","set_id":"Madrid","type":"Gobierno monocolor de izquierdas","prob":6.92,"y":6.92,"color":"#FF3827","name":"Madrid"},{"coloract":"#FF3827","datetime":"2019-07-12T00:00:00Z","set_id":"Barcelona","type":"Gobierno monocolor de izquierdas","prob":0.79,"y":0.79,"color":"#FF3827","name":"Barcelona"},{"coloract":"#FF3827","datetime":"2019-07-03T00:00:00Z","set_id":"Valencia","type":"Gobierno monocolor de izquierdas","prob":5.73,"y":5.73,"color":"#FF3827","name":"Valencia"}],"type":"column"},{"name":"Gobierno monocolor de soberanistas","data":[{"coloract":"#ffca28","datetime":"2019-07-12T00:00:00Z","set_id":"Barcelona","type":"Gobierno monocolor de soberanistas","prob":0.24,"y":0.24,"color":"#ffca28","name":"Barcelona"}],"type":"column"},{"name":"Gobierno monocolor mixto*","data":[{"coloract":"#f48fb1","datetime":"2019-07-12T00:00:00Z","set_id":"Barcelona","type":"Gobierno monocolor mixto*","prob":0.24,"y":0.24,"color":"#f48fb1","name":"Barcelona"}],"type":"column"},{"name":"Repetición electoral","data":[{"coloract":"#babdbe","datetime":"2019-07-18T00:00:00Z","set_id":"España","type":"Repetición electoral","prob":33.86,"y":33.86,"color":"#babdbe","name":"España"},{"coloract":"#babdbe","datetime":"2019-07-10T00:00:00Z","set_id":"C. Valenciana","type":"Repetición electoral","prob":0.99,"y":0.99,"color":"#babdbe","name":"C. Valenciana"},{"coloract":"#babdbe","datetime":"2019-07-17T00:00:00Z","set_id":"C. Madrid","type":"Repetición electoral","prob":5.6,"y":5.6,"color":"#babdbe","name":"C. Madrid"},{"coloract":"#babdbe","datetime":"2019-07-11T00:00:00Z","set_id":"Madrid","type":"Repetición electoral","prob":1.17,"y":1.17,"color":"#babdbe","name":"Madrid"},{"coloract":"#babdbe","datetime":"2019-07-12T00:00:00Z","set_id":"Barcelona","type":"Repetición electoral","prob":52.73,"y":52.73,"color":"#babdbe","name":"Barcelona"},{"coloract":"#babdbe","datetime":"2019-07-03T00:00:00Z","set_id":"Valencia","type":"Repetición electoral","prob":1.59,"y":1.59,"color":"#babdbe","name":"Valencia"}],"type":"column"}],"xAxis":{"type":"category","title":{"text":""}},"legend":{"enabled":false}},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-eead98815593a3cf0d17" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eead98815593a3cf0d17">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["Gobierno de coalición de izquierdas","Gobierno monocolor de centro","Gobierno monocolor de izquierdas","Gobierno de coalición de derechas"],[18.4,18.16,17.81,16.49],[-0.73,0.52,2.19,0.16]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Tipo de gobierno<\/th>\n      <th>Probabilidad<\/th>\n      <th>Tendencia<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","scrollX":false,"fixedColumns":true,"scrollCollapse":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':isNaN(parseFloat(value)) ? '' : value <= -0.001000 ? 'red' : value <= 0.001000 ? 'black' : 'green'});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<ul>
+<li><strong><a href="https://aloport.github.io/predi/voto.html">Estimación de voto a partidos</a></strong></li>
+</ul>
+<div id="htmlwidget-f96d5e7449c44266ca69" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f96d5e7449c44266ca69">{"x":{"filter":"none","extensions":["FixedColumns"],"data":[["PSOE","PP","Otros","Ciudadanos","Unidas Podemos","VOX","Más País"],[27.57,19.43,12.36,11.18,11.12,9.35,4.13],[-0.04,0,0.2,-0.11,-0.03,-0.03,0.04]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Partido<\/th>\n      <th>Voto<\/th>\n      <th>Tendencia<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"r","scrollX":true,"fixedColumns":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':isNaN(parseFloat(value)) ? '' : value <= -0.001000 ? 'red' : value <= 0.001000 ? 'black' : 'green'});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
 <p><a href="https://aloport.github.io/predi/projects.html">Metodología</a> • <a href="https://aloport.github.io/predi/about.html">Sobre nuestro proyecto de investigación</a> • <a href="https://aloport.github.io/predi/participate.html">¿Quieres participar en el mercado de predicción?</a></p>
 <hr />
 <p>Contacto: Alberto López Ortega <em><a href="mailto:alberto.lopezortega@uzh.ch" class="email">alberto.lopezortega@uzh.ch</a></em> , <a href="https://twitter.com/bertous">bertous</a></p>
@@ -426,6 +353,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

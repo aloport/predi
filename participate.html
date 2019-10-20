@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -83,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -244,18 +244,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -283,51 +271,18 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="gobierno_esp_19.html">Elecciones Generales</a>
-</li>
-<li class="dropdown">
+        <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Elecciones Autonómicas
+    Elecciones 10N
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="gobierno_cma_19.html">Gobierno en C. Madrid</a>
+      <a href="gobierno_esp_19_2.html">Predicción de voto</a>
     </li>
     <li>
-      <a href="primer_cma_19.html">Primer partido en C. Madrid</a>
-    </li>
-    <li>
-      <a href="gobierno_cva_19.html">Gobierno en C. Valenciana</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Elecciones Locales
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="gobierno_mad_19.html">Gobierno en Madrid</a>
-    </li>
-    <li>
-      <a href="primer_mad_19.html">Primer partido en Madrid</a>
-    </li>
-    <li>
-      <a href="gobierno_bar_19.html">Gobierno en Barcelona</a>
-    </li>
-    <li>
-      <a href="primer_bar_19.html">Primer partido en Barcelona</a>
-    </li>
-    <li>
-      <a href="gobierno_val_19.html">Gobierno en Valencia</a>
-    </li>
-    <li>
-      <a href="primer_val_19.html">Primer partido en Valencia</a>
+      <a href="voto_esp_19_2.html">Predicción de gobierno</a>
     </li>
   </ul>
 </li>
@@ -360,7 +315,7 @@ $(document).ready(function () {
 <h2>Registro</h2>
 <p>Puedes registrarte en el mercado de predicción creando una cuenta en <a href="http://thepredictionmarket.com" class="uri">http://thepredictionmarket.com</a>. Una vez creada tu cuenta te asignaremos un mercado y enviaremos detalladamente las instrucciones del juego. <strong>Para poder identificarte, debes utilizar tu cuenta de e-mail oficial de tu universidad</strong>. Este proceso no es automático y podría tardar unos días.</p>
 </div>
-<div id="remuneracion" class="section level2">
+<div id="remuneración" class="section level2">
 <h2>Remuneración</h2>
 <p>Para poder comprar y vender en el mercado de predicción te entregaremos 10 euros. Con este dinero deberás comprar y vender acciones sobre eventos políticos. Tu ganancia al final del juego dependerá de tu buen rendimiento. Por ejemplo, en el mercado de las pasadas elecciones catalanas los participantes obtuvieron de media 20,83€; y las ganancias oscilaron desde 0 hasta los 348,53€ que recibió el ganador. Dicha compensación será pagada después del cierre de mercado, cuando se haya elegido formalmente un nuevo gobierno en cada caso. La compensación se transferirá a través de una transferencia bancaria, lo cual solamente será posible a través de cuentas bancarias europeas, registradas con el nombre del participante.</p>
 <hr />
@@ -384,6 +339,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
