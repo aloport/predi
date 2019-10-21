@@ -3,11 +3,11 @@ _________
 
  
 
-A continuación, los resultados actualizados __[20 de octubre de 2019]__. 
+A continuación, los resultados actualizados __[21 de octubre de 2019]__. 
  
 -------------------
 
-- __[Predicción sobre el gobierno resultante](https://aloport.github.io/predi/gobierno.html)__
+- __[Predicción sobre el gobierno resultante](https://aloport.github.io/predi/gobierno_esp_19_2.html)__
 
 ```{r holio1, echo = FALSE, fig.align='center'}
 myColors_gen <- c("#0000BA", "#9A0000", "#A9A9A9", "#C57420", "#FF3827", "#FF9300", "#04AAFF")
@@ -29,7 +29,7 @@ datatable(head(generales_little, 4), rownames=FALSE, colnames = c('Tipo de gobie
 
 ```
 
-- __[Estimación de voto a partidos](https://aloport.github.io/predi/voto.html)__
+- __[Estimación de voto a partidos](https://aloport.github.io/predi/voto_esp_19_2.html)__
 
 ```{r holio2, echo = FALSE, fig.align='center'}
 

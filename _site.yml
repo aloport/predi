@@ -4,10 +4,10 @@ navbar:
   title: "PREDI 10N"
   href: index.html
   left:
-  - text: "Predicción de voto"
-    href: voto_esp_19_2.html     
   - text: "Predicción de gobierno"
-    href: gobierno_esp_19_2.html  
+    href: gobierno_esp_19_2.html 
+  - text: "Predicción de voto"
+    href: voto_esp_19_2.html  
   - text: "Funcionamiento"     
     href: projects.html 
   - text: "Sobre nosotros"
