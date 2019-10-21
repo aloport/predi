@@ -2,7 +2,7 @@
 title: ¿Cómo funciona el mercado de predicción?
 ---
 
-El mecanismo del mercado de predicción se asemeja mucho al de un mercado bursátil. Sin embargo, en lugar de comerciar con productos financieros, [los participantes](https://aloport.github.io/predi/participate.html) en el mercado comercian con acciones sobre eventos políticos futuros. En nuestro mercado para las elecciones generales del 28A, por ejemplo, los participantes tienen que predecir dos tipos de eventos. 
+El mecanismo del mercado de predicción se asemeja mucho al de un mercado bursátil. Sin embargo, en lugar de comerciar con productos financieros, [los participantes](https://aloport.github.io/predi/participate.html) en el mercado comercian con acciones sobre eventos políticos futuros. En nuestro mercado para las elecciones generales del 10N, por ejemplo, los participantes tienen que predecir dos tipos de eventos. 
 
 - _Gobierno resultante._ El primer evento que tienen que predecir los participantes es cuál va ser el gobierno resultante tras las elecciones, en el que cada uno de los escenarios más probables es un contrato en el mercado. 
 
@@ -43,7 +43,7 @@ datatable(Ejemplo_2, extensions = 'FixedColumns',
 ```
 
 
-En este caso, el porcentaje de voto estimado para el PP por nuestro modelo sería un 21%. Esta misma operación la repetimos en los submercados de los otros partidos. Como último paso, corregimos el resultado de acuerdo a la cantidad estimada de "Otros" cuando la probabilidad acumulada de los cinco partidos supera la media de las encuestas. Nuestras estimaciones de voto diarias son el resultado de la agregación de estas operaciones.
+En este caso, el porcentaje de voto estimado para el PP por nuestro modelo sería un 21%. Esta misma operación la repetimos en los submercados de los otros partidos. Nuestras estimaciones de voto diarias son el resultado de la agregación de estas operaciones.
 
 ## Ventajas
 
