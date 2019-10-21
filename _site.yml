@@ -1,16 +1,16 @@
 name: "albertos-website"
 output_dir: "."
 navbar:
-  title: "PREDI"
+  title: "PREDI 10N"
   href: index.html
   left:
-  - text: "Elecciones 10N"
-    menu:
-      - text: "Predicción de voto"
-        href: gobierno_esp_19_2.html      
-      - text: "Predicción de gobierno"
-        href: voto_esp_19_2.html
+  - text: "Predicción de voto"
+    href: voto_esp_19_2.html     
+  - text: "Predicción de gobierno"
+    href: gobierno_esp_19_2.html  
   - text: "Funcionamiento"     
+    href: projects.html 
+  - text: "Sobre nosotros"
     href: about.html
   - text: "¿Quieres participar?"
     href: participate.html
