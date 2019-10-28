@@ -16,6 +16,7 @@ highchart() %>%
   hc_add_series(name = "Ciudadanos", data = intrapolation_reduce$cs, color = "#FA5000") %>% 
   hc_add_series(name = "Unidas Podemos", data = intrapolation_reduce$up, color= "#672F6C") %>% 
   hc_add_series(name = "VOX", data = intrapolation_reduce$vox, color= "#32CD32") %>% 
+  hc_add_series(name = "Más País", data = intrapolation_reduce$mp, color= "#5ab4ac") %>% 
   hc_tooltip(crosshairs = TRUE, backgroundColor = "#FBFEFF",
              shared = TRUE, borderWidth = 0, sort = TRUE,  table = TRUE)
 
