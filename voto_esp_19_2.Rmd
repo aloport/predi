@@ -2,12 +2,13 @@
 title: Predicción diaria de voto a partidos
 ---
 
-Estos los resultados electorales más probables para los 5 grandes partidos [actualizado: 4 de noviembre de 2019].
+Estos los resultados electorales más probables para los 6 partidos estatales [actualizado: 5 de noviembre de 2019].
 
 _________________
 
 
 ```{r pressure, echo=FALSE, out.width = '20%'}
+
 
 highchart() %>% 
   hc_xAxis(categories = intrapolation_reduce$datetime2, tickInterval = 1) %>% 
